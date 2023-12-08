@@ -17,12 +17,13 @@ function twoSum(nums: number[], target: number) {
     // If the complement doesn't exist, add the current 
     // number and its index to the Map.
     numToIndex.set(nums[ i ], i);
-
   }
-
   // If no solution is found, return an empty array 
   // (no valid answer).
   return [];
 }
+
+const result = twoSum([ 2, 7, 11, 15 ], 9);
+console.log(result);
 
 export default twoSum;
